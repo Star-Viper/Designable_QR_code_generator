@@ -6,19 +6,25 @@
   <title>QR Code Generator</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<>
   <div class="container">
     <label for="inputText">Enter text:</label>
     <input type="text" id="inputText" placeholder="Type text here">
-    <button onclick="generateQRCode()">Generate QR Code</button>
-    <button onclick="downloadQRCode()">Download QR Code</button>
-    <button onclick="changeQRCodeAppearance()">Change Appearance</button>
-
     <div id="qrcode"></div>
+    <br>
+    <div>
+      <button onclick="generateQRCode()">Generate QR Code</button>
+    </div>
+    <br>
   </div>
 
   <script src="./qrcode.min.js"></script>
   <script src="./script.js"></script>
+  <div>
+    <button onclick="downloadQRCode()">Download QR Code</button>
+    <button onclick="changeQRCodeAppearance()">Change Appearance</button>
+  </div>
+  <br>
   <div class="share-buttons">
     <button onclick="shareOnFacebook()">Share on Facebook</button>
     <button onclick="shareOnTwitter()">Share on Twitter</button>
