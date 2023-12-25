@@ -65,4 +65,8 @@ body {
   .share-buttons button:hover {
     opacity: 0.8;
   }
+
+  #qrcode img {
+    border: 2px solid #000; /* Black border */
+  }
   

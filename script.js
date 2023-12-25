@@ -32,4 +32,25 @@ function generateQRCode() {
     window.open(url, '_blank', 'width=600,height=400');
   }
   
+  function downloadQRCode() {
+    var qrcodeImage = document.getElementById('qrcode').getElementsByTagName('img')[0].src;
+ 
+    var downloadLink = document.createElement('a');
+    downloadLink.href = qrcodeImage;
+    downloadLink.download = 'qrcode.png';
+  //Append link to body
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    //Remove link from DOM
+    document.body.removeChild(downloadLink);
+  }
+  
+  //change the appearance of the QR code
+  function changeQRCodeAppearance() {
+    var qrcodeContainer = document.getElementById('qrcode');
+    var qrcodeImage = qrcodeContainer.getElementsByTagName('img')[0];
+  
+    //Change the border of the QR code {now red}
+    qrcodeImage.style.border = '2px solid #ff0000'; 
+  }
   
