@@ -42,4 +42,27 @@ body {
   #qrcode {
     margin-top: 20px;
   }
+
+  .share-buttons {
+    margin-top: 20px;
+  }
+  
+  .share-buttons button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #3b5998; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .share-buttons button:last-child {
+    margin-right: 0;
+    background-color: #dee9ef; 
+  }
+  
+  .share-buttons button:hover {
+    opacity: 0.8;
+  }
   
